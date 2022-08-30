@@ -502,10 +502,10 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             SubmitResults();
         }
 
-        if (cps <= 5) return I18N['text-level-1'];
-        if (cps <= 8) return I18N['text-level-2'];
-        if (cps <= 10)  return I18N['text-level-3'];
-        if (cps <= 15) return I18N['text-level-4'];
+        if (cps <= 15) return '就这？就这？';
+        if (cps <= 30) return '这也配做十四中人？';
+        if (cps <= 60)  return '加油呀!';
+        if (cps <= 90) return '你一定开挂了';
         return I18N['text-level-5'];
     }
 
